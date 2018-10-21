@@ -1,0 +1,11 @@
+AddDefaultCharset utf-8
+DirectoryIndex index.php
+
+RewriteEngine on
+RewriteBase /
+
+RewriteRule ^img/ -  [L]
+RewriteRule ^js/ -  [L]
+RewriteRule ^css/ -  [L]
+
+RewriteRule ^([A-Za-z0-9\(\)_/-]+)$ /api/?$1  [L]
